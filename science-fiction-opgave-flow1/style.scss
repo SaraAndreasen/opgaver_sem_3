@@ -1,0 +1,141 @@
+//variabler
+$brand-font: 'Anton', arial, sans-serif;
+$brand-font-paragraphs: Arial, Helvetica, sans-serif;
+$brand-underheaders-font-weight: 500;
+$menu-position: inline;
+$menu-float-left: left;
+$menu-float-right: right;
+$decoration: none;
+$hover: underline;
+$display-menu: block;
+$padding-value-left: 50px;
+$padding-value-right: 50px;
+$brand-color: rgb(13, 95, 128);
+$a-links-color: rgb(235, 235, 235);
+$table-display: table;
+$value-table: 0 auto;
+$value-width: 60%;
+$background-color: rgb(42, 42, 42);
+$padding-1: 15px;
+$letter-spacing: 2px;
+$margin-value: 200px;
+$fill-padding: 40px 0px 40px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+}
+
+.menu-header {
+    display: $display-menu;
+    background-color: $brand-color;
+    padding-right: $padding-value-right;
+    padding-left: $padding-value-left;
+    h1 {
+    font-family: $brand-font;
+    display: $menu-position;
+    color: $a-links-color;
+        } 
+.menu {
+    float: $menu-float-right;
+    padding-top: $padding-1;
+    
+    li {
+        display: $menu-position;
+        
+        a {
+            text-decoration: $decoration;
+            color:$a-links-color;
+            font-family: $brand-font-paragraphs;
+            padding: $padding-1;
+            &:hover {
+                text-decoration: $hover;
+            }
+        }
+        }
+    }
+}           
+
+//SASS mix-funktion, der mixer to farver sammen.
+.function-div {
+    width: $value-width;
+    display:$table-display;
+    margin: $value-table;
+    background-color: mix($background-color , $brand-color, 40%);
+}
+
+h2 {
+    font-family: $brand-font;
+    text-align: center;
+    color: $a-links-color;
+    letter-spacing: $letter-spacing;
+}
+
+h3, h4 {
+    font-family: $brand-font-paragraphs;
+    display: $table-display;
+    margin: $value-table;
+    color: $a-links-color;
+}
+
+.h3Exception {
+    font-family: $brand-font;
+    font-weight: $brand-underheaders-font-weight;
+    letter-spacing: $letter-spacing;
+}
+
+p {
+    font-family: $brand-font-paragraphs;
+    color: $a-links-color;
+}
+
+figcaption, .footer {
+    @extend p;
+}
+
+img {
+    display: $table-display;
+    margin: $value-table;
+    width: $value-width;
+}
+
+.fyldeDiv {
+    @extend img;
+    padding: $fill-padding;
+}
+
+figcaption {
+    @extend img;
+    padding: 10px;
+    color: $a-links-color;
+}
+
+.footer {
+    background-color: $brand-color;
+    height: 120px;
+    
+    .copyright {
+        float: $menu-float-left;
+        margin-left: $margin-value; 
+        margin-top: 45px!important;
+    }
+        ul { 
+            margin-top: 30px!important;
+            list-style-type: none;
+            float: $menu-float-right;
+       
+                a {
+                    text-decoration: $decoration;
+                    color: $a-links-color;
+                    margin-right: $margin-value; 
+                    
+                    &:hover{
+                        text-decoration: $hover;
+                    }
+            }
+        }
+}
