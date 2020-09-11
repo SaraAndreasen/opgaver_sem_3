@@ -1,0 +1,4 @@
+@mixin my-rotate {
+    transform: rotate(1.5deg);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}

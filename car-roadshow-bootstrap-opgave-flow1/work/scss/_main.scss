@@ -1,0 +1,101 @@
+body {
+    background-color: $background-color;
+    color: $font-color;
+    font-family: $brand-font;
+    padding: 0;
+}
+
+.navbar {
+    background-color: $font-color;
+        h1 {
+            font-size: $font-size;
+            color: $dark-font;
+            font-family: $header-font;
+        }
+            a {
+                color: $dark-font;
+                font-family: $brand-font;
+            }
+
+    .nav-item {
+        text-align: right;
+       
+    } 
+    .navbar-nav { 
+            margin-left: auto; 
+        } 
+}
+
+h2 {
+    font-family: $header-font;
+    text-align: $center-var;
+}
+
+.carousel-inner {
+    text-align: $center-var;
+        .img-fluid {
+        max-width: 100%;
+    }
+}
+
+
+
+
+figure {
+    display: $inline-display;
+    
+    figcaption {
+    background-color: $font-color;
+    color: $background-color;
+    text-align: $center-var;
+    margin-bottom: 15px!important;
+}
+}
+
+
+
+.jumbotron {
+    color: $dark-font;
+    text-align: $center-var;
+    align-items: $center-var;
+        ul {
+            list-style-type: $remove-dots-ul;
+        }
+        h3 {
+            font-family: $header-font;
+        }
+}
+
+
+
+button {
+    background-color: $font-color;
+    border-color: $background-color;
+    border-radius: 10px;
+        &:hover {
+            background-color: mix($background-color, $font-color, 50%);
+            @include my-rotate;
+        }
+}
+
+footer {
+    background-color: $font-color;
+    color: $background-color;
+    text-align: $center-var;
+    padding: 1%;
+    a {
+        color: $background-color;
+        
+        &:hover {
+               color: $background-color;
+        }
+    }
+    ul {
+        list-style-type: $remove-dots-ul;
+        font-size: $font-size;
+            li {
+                display: $inline-display;
+            }
+        
+    }
+}
