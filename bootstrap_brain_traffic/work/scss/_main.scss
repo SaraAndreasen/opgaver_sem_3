@@ -1,0 +1,379 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+
+#post-5 {
+    .entry-header {
+        text-align: center;
+    }
+}
+.site-header {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-top;
+    .custom-logo-link {
+        width: 64px;
+        height: 64px;
+        float: left;
+         img {
+           margin-top: 20px;
+        }
+    }
+       
+    .site-title {
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        a {
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 300;
+        }  
+    }
+    .main-navigation {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        float: right;
+        text-align: left;
+            a {
+                color: lighten($font-color, 25%);
+                font-weight: 600;
+            }
+            .menu-toggle {
+                padding: 0;
+                border: none;
+                background-color: $color-white;
+            }
+            .menu {
+                align-self: flex-start;
+                .nav-menu {
+                    margin-top: $spacing*2;
+                }
+            }
+    }
+}
+article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.entry-header{
+    width: 100%;
+    margin: 0;
+    background-color: $background-top;
+}
+.entry-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        
+    .tekstbillede{
+        background-image: url("../../../img/background.png");
+        background-size: cover;
+        height: auto;
+        color: $color-white;
+        text-align: left;
+
+        p, h1, h4 {
+            text-align: left;
+            width: 100%;
+            margin-left: 5px;
+        }
+    }
+    
+        
+}
+   
+.forside-kolonne {
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+    .kolonne {
+        text-align: left!important;
+        p {
+            text-align: left;
+        }
+    }
+
+    p, figure {
+        text-align: center;
+}
+
+
+.site-footer {
+        background-color: $background-top;
+        padding-top: 30px;
+        p, h2 {
+            text-align: center;
+        }
+        .mailing-section {
+            
+            .field-label {
+                top: -27px;
+                right: auto;
+                bottom: auto;
+                color: hsla(0,0%,45.3%,.81);
+                font-size: .7em;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input {
+                display: block;
+                width: 100%;
+                height: 50px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #dadada;
+                border-radius: 4px;
+                background-color: $color-white;
+                color: #666;
+                font-size: .9em;
+                font-weight: 400;
+                margin-bottom: $margin-bottom-footer;
+            }
+           .knap {
+                display: block;
+                width: 100%;
+                background-color: $firm-color;
+                border: none;
+                color: $color-white;
+                padding: 20px;
+                margin-bottom: $margin-bottom-footer;
+            }
+        } 
+        .wrapper {
+            margin-top: 100px!important;
+            display: block;
+            padding-bottom: 50px;
+            .footer-list {
+                padding-left: 0;
+                margin-bottom: 0;
+                line-height: 1.6em; 
+                display: block;
+                list-style-type: none;
+                   a { color: $firm-color;} 
+            }
+                    
+             
+        }
+        .warning {
+            text-align: center;
+        }
+}
+
+.page {
+    margin: 0 0 0;
+}
+
+
+@media screen and (min-width: 600px){
+        .site-header {
+            flex-direction: row;
+            width: 100%;
+        
+
+        .site-branding {
+            width: 100%;
+        }
+            .main-navigation {
+                display: flex;
+                justify-content: flex-end;
+            
+                .menu-menu-1-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;  
+                    .menu-item {
+                                margin-left: $spacing;
+                                }
+                }
+                    .menu {
+                        align-self: flex-end;
+                            .nav-menu {
+                                margin-top: $spacing;
+                            }
+                              
+                    }
+        }
+    }
+
+
+
+    .wp-block-search {
+        display: block;
+        margin-top: 10px;
+        width: 80%;
+        text-align: center;
+    
+        .wp-block-search__input {
+            padding: 10px;
+        }
+
+        .wp-block-search__button{
+            padding: 10px;
+        }
+
+    }
+}
+
+.kolonne {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 600px){
+        .site-header {
+            flex-direction: row;
+            width: 100%;
+        
+
+        .site-branding {
+            width: 100%;
+        }
+            .main-navigation {
+                display: flex;
+                justify-content: flex-end;
+            
+                .menu-menu-1-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;  
+                    .menu-item {
+                                margin-left: $spacing;
+                                }
+                }
+                    .menu {
+                        align-self: flex-end;
+                            .nav-menu {
+                                margin-top: $spacing;
+                            }
+                              
+                    }
+        }
+    }
+
+
+
+    .wp-block-search {
+        display: block;
+        width: 80%;
+        text-align: center;
+    
+        .wp-block-search__input {
+            padding: 10px;
+        }
+
+        .wp-block-search__button{
+            padding: 10px;
+        }
+
+    }
+}
+
+//700 pixels
+@media screen and (min-width: 700px){
+
+.entry-header {
+    h1 {
+        display: block;
+        margin: 0 auto;
+        font-size: 60px;
+        width: 70%;
+        align-items: center;
+    }
+}
+
+    .tekstbillede{
+        width: 100%;
+         p, h1, h4 {
+            text-align: left;
+            width: 50%!important;
+            margin-left: 5px;
+        }
+    }
+
+    .site-footer {
+        .mailing-section {
+            display: flex;
+            justify-content: space-between;
+            .navn {
+                width: 20%;
+                padding: 5px;
+            }
+            .navn-button {
+                width: 20%;
+                padding: 5px;
+                margin-top: 19px;
+            }
+        }
+        .wrapper {
+            margin-top: 100px!important;
+            display: block;
+            padding-bottom: 50px;
+            .footer-list {
+                padding-left: 0;
+                margin-bottom: 0;
+                line-height: 1.6em; 
+                display: flex;
+                list-style-type: none;
+                   a { color: $firm-color; padding: 5px;} 
+            }
+                    
+             
+        }
+        
+}
+
+.page {
+    margin: 0 0 0;
+}}
+
+
+//Stopklods
+@media screen and (min-width: 1200px){
+
+    .forside-kolonne {
+        p {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            align-items: center;
+        }
+        figure {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            align-items: center;
+        }
+    }
+
+    .kolonne1 {
+        width: 1105px;
+        text-align: left!important;
+        p {
+            text-align: left;
+        }
+    }
+
+
+    .tekstbillede{
+       width: 137%;
+         p, h1, h4 {
+            text-align: left;
+            width: 50%!important;
+            margin-left: 5px;
+            margin-bottom: 100px;
+        }
+    }
+}
