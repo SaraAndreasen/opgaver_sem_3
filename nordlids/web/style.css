@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans', sans-serif; }
+
+.carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-align: left; }
+.carousel-item img {
+  width: 100%;
+  height: 400px; }
+
+.introduction {
+  margin-top: 50px; }
+
+.formel input {
+  border: none;
+  border-bottom: 1px solid; }
+.formel #exampleCheck1 {
+  background-color: #E6007E; }
+.formel .button1 {
+  background-color: #E6007E;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 20px; }
+
+.loremText {
+  margin-top: 40px; }
+
+.information {
+  background-color: #2A697B;
+  color: white;
+  padding: 50px; }
+  .information img {
+    height: 40%;
+    display: table;
+    margin: 0 auto; }
+  .information p {
+    font-size: 30px; }
+
+footer {
+  color: white;
+  background-color: #313131; }
+  footer h6 {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-left: 50px !important; }
+  footer .location {
+    font-size: 12px; }
+    footer .location img {
+      float: left;
+      margin-right: 3px;
+      height: 30px;
+      margin-left: 50px !important; }
+  footer .phone {
+    font-size: 12px; }
+    footer .phone img {
+      float: left;
+      margin-right: 3px;
+      height: 30px;
+      margin-left: 50px !important; }
+    footer .phone p {
+      padding-top: 5px; }
+  footer .mail {
+    font-size: 12px; }
+    footer .mail img {
+      float: left;
+      margin-right: 3px;
+      height: 30px;
+      margin-left: 50px !important; }
+    footer .mail p {
+      padding-top: 5px; }
+  footer .soMe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
