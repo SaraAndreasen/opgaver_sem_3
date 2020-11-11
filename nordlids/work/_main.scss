@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans', sans-serif;
+}
+
+
+//carousel
+.carousel-item {
+        .carousel-caption {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        z-index: 20;
+        color: $font-color;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        text-align: left;
+      }
+        img {
+          width: $width-100;
+          height: 400px;
+        }
+
+}
+
+
+//introduction
+.introduction {
+  margin-top: $fifty-pixels;
+}
+
+//form
+.formel {
+    input {
+      border: $design-none;
+      border-bottom: 1px solid;
+    }
+#exampleCheck1 {
+  background-color: $pink-colour;
+}
+
+  .button1 {
+    background-color: $pink-colour;
+    color: $font-color;
+    width: $width-100;
+    font-weight: $bold-font;
+    border: $design-none;
+    outline: $design-none;
+    border-radius: 0;
+    padding: $fifteen-pixels;
+    margin-bottom: 20px;
+  }
+}
+
+.loremText {
+  margin-top: 40px;
+}
+
+
+//Blå informationslinje
+.information {
+  background-color: $blue-colour;
+  color: $font-color;
+  padding: $fifty-pixels;
+  img {
+    height: 40%;
+    display: table;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+
+
+
+//footer
+footer {
+  color: $font-color;
+  background-color: $footer-colour;
+
+    h6 {
+      margin-top: $fifteen-pixels;
+      font-weight: $bold-font;
+      margin-left: $fifty-pixels!important;
+    }
+    .location {
+      font-size: $font-size-footer;
+
+      img {
+        float: $float-footer-left;
+        margin-right: $margin-right-three;
+        height: $height-footer;
+        margin-left: $fifty-pixels!important;
+      }
+    }
+  .phone {
+    font-size:$font-size-footer;
+
+    img {
+      float: $float-footer-left;
+      margin-right: $margin-right-three;
+      height: $height-footer;
+      margin-left: $fifty-pixels!important;
+    }
+    p {
+      padding-top: $padding-five;
+  } }
+  .mail {
+    font-size: $font-size-footer;
+
+    img{
+      float: $float-footer-left;
+      margin-right: $margin-right-three;
+      height: $height-footer;
+      margin-left: $fifty-pixels!important;
+    }
+    p {
+      padding-top: $padding-five;
+  }
+}
+
+  .soMe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $fifty-pixels;
+  }
+}
